@@ -79,16 +79,57 @@
 // }
 // umur(-10);
 
+// function discond($belanja){
+//     if ($belanja > 100){
+//         $total = $belanja - ($belanja*1/10);
+//         echo"total belanja anda : $" . $belanja . "anda mendapatkan discond 10% jadi;<br>
+//         yang harus di bayar sebesar : $" . $belanja . " - $" . ($belanja*1/10) ." = $" . $total;
+//     }elseif ($belanja <= 100){
+//         echo "total belanja anda : " . $belanja;
+//     }else{
+//         echo "masukan total uang belanja dengan benar";
+//     }
+// }
+// discond(1000);
+
+
+
+
+
+
+
+
+
 function discond($belanja){
-    if ($belanja > 100){
-        $total = $belanja - ($belanja*1/10);
-        echo"total belanja anda : $" . $belanja . "anda mendapatkan discond 10% jadi;<br>
-        yang harus di bayar sebesar : $" . $belanja . " - $" . ($belanja*1/10) ." = $" . $total;
-    }elseif ($belanja <= 100){
-        echo "total belanja anda : " . $belanja;
-    }else{
-        echo "masukan total uang belanja dengan benar";
-    }
-}
-discond(120);
+    if($belanja >"100"){
+        $discond = $belanja * 0.1;
+        $total = $belanja - $discond;
+        echo"total belanja anda adalah" . $belanja . "anda mendapatkan discond 10% <br>
+        maka yang harus di bayar adalah :" . $belanja . " - $" .$discond . "$" . $total;
+            }elseif($belanja <= "100"){
+                echo"total belanja anda adalah : $belanja";
+            }else{
+                echo "masukan total belanja yang benar";
+            }
+    };
+
+discond(200);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
